@@ -13,7 +13,7 @@ func setFrameworkGlobals() {
 	framework.CheckFunctionAppendBehavior = "Remove older instance"
 	framework.UseUDP = true
 	// Run more frequently since the connection window is only 60 seconds
-	framework.RefreshDataPointsEvery = 30
+	framework.RefreshDataPointsEvery = 10
 
 	framework.RegisterMainGetFunc(doDeviceSpecificGet)
 	framework.RegisterMainSetFunc(doDeviceSpecificSet)
